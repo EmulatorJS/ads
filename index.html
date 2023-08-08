@@ -39,9 +39,11 @@
             <p>Ads on this page may come and go depending on how many people are funding this project.<br>You can help fund this project on <a href="https://patreon.com/EmulatorJS">patreon</a></p>
         </div>
         <script>
-            if (!adsbygoogle.loaded) {
-                document.getElementById("adblock").style.display = "block";
-            }
+            window.onload = function(){
+                if (!adsbygoogle.loaded) {
+                    document.getElementById("adblock").style.display = "block";
+                }
+            };
         </script>
     </body>
 </html>
